@@ -13,11 +13,11 @@ public class Board {
         cpuPositions = new ArrayList<>();
     }
 
-    public ArrayList<Integer> getPlayerPositions() {
+    public List<Integer> getPlayerPositions() {
         return playerPositions;
     }
 
-    public ArrayList<Integer> getCpuPositions() {
+    public List<Integer> getCpuPositions() {
         return cpuPositions;
     }
 
@@ -88,16 +88,16 @@ public class Board {
 
 
     public List<List> winConditions() {
-        List topRow = Arrays.asList(1,2,3);
-        List middleRow = Arrays.asList(4,5,6);
-        List bottomRow = Arrays.asList(7,8,9);
+        List<Integer> topRow = Arrays.asList(1,2,3);
+        List<Integer> middleRow = Arrays.asList(4,5,6);
+        List<Integer> bottomRow = Arrays.asList(7,8,9);
 
-        List leftColumn = Arrays.asList(1,4,7);
-        List middleColumn = Arrays.asList(2,5,8);
-        List rightColumn = Arrays.asList(3,6,9);
+        List<Integer> leftColumn = Arrays.asList(1,4,7);
+        List<Integer> middleColumn = Arrays.asList(2,5,8);
+        List<Integer> rightColumn = Arrays.asList(3,6,9);
 
-        List diagonal1 = Arrays.asList(1,5,9);
-        List diagonal2  = Arrays.asList(7,5,3);
+        List<Integer> diagonal1 = Arrays.asList(1,5,9);
+        List<Integer> diagonal2  = Arrays.asList(7,5,3);
 
         List<List> winningConditions = new ArrayList<List>();
         winningConditions.add(topRow);

@@ -80,8 +80,4 @@ class BoardTest extends TestCase {
         boolean taken = board.positionTaken(2);
         assertEquals(false, taken);
     }
-
-    @Test
-    void test_Play() {
-    }
 }

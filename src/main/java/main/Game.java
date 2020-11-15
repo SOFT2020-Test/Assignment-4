@@ -7,14 +7,8 @@ public class Game {
     static Random rnd = new Random();
 
     public static void main(String[] args) {
-        Play();
-    }
-
-
-    public static void Play() {
         board.setUp(); //Run setup
         board.printBoard(); //Print the board
-
         while(board.findWinner() == Results.NEXT_ROUND) {
             System.out.print("Enter placement (1-9): ");
             Scanner sc = new Scanner(System.in);
@@ -23,10 +17,8 @@ public class Game {
                 System.out.println("position already taken!");
                 playerPos = sc.nextInt();
             }
-
             board.placePiece(playerPos, Players.YOU);
             board.printBoard();
-
             int cpuPos = rnd.nextInt(9) + 1;
             while(board.positionTaken(cpuPos) == true) {
                 cpuPos = rnd.nextInt(9) + 1;
