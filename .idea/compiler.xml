@@ -9,6 +9,7 @@
         <module name="BookingSystem" />
         <module name="database" />
         <module name="Assignment-3" />
+        <module name="Assignment-4" />
         <module name="test2020fall-BookingSystem" />
       </profile>
     </annotationProcessing>

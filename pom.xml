@@ -10,25 +10,6 @@
     <build>
         <plugins>
             <plugin>
-                <!--
-                These are used for running the maven target flyway:migrate
-                -->
-                <groupId>org.flywaydb</groupId>
-                <artifactId>flyway-maven-plugin</artifactId>
-                <version>7.0.0</version>
-                <configuration>
-                    <url>jdbc:mysql://localhost:3307/</url>
-                    <user>root</user>
-                    <password>password</password>
-                    <defaultSchema>BookingSystemTest</defaultSchema>
-                    <createSchemas>true</createSchemas>
-                    <schemas>
-                        <schema>BookingSystemTest</schema>
-                    </schemas>
-                </configuration>
-            </plugin>
-
-            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
@@ -87,7 +68,6 @@
             <groupId>org.testcontainers</groupId>
             <artifactId>junit-jupiter</artifactId>
         </dependency>
-
         <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
