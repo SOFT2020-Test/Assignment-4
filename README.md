@@ -20,7 +20,7 @@ SonarQube Analysis        |  PiHole Mutations (this doesnt work for some reason.
 ### How to verify that mock is called and how do you verify that a mock has not been called
 Mockito har tagget “verify” man kan bruge til at se om en mock bliver kørt 
 Her er et billede hvor jeg har hardcoded svaret og ikke bruger et service, hvor den fejler fordi at mock ikke blev kørt.
-Test Class where Mock is not called      |   
+Test Class where Mock is not called      |   .   
 :-------------------------:|:-------------------------:
 ![passed](/images/verify-error.png)  |  ![passed](/images/verify-testclass.png)
 
