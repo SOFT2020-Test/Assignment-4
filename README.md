@@ -31,3 +31,12 @@ Test Class where Mock is called (verified)     |  .
 
 ###  How do you specify how many times a mock should have been called?
 Man kan bruge tagget “times” den vil give en fejl hvis mocken ikke var kørt det antal gange man specificeret. Her fejlede den fordi jeg sagde den skulle køre 7 gange men kun blev kørt en gang. 
+![x](/images/how-many-times-mock-called.png)  
+
+### How do you verify that a mock was called with specific arguments? 
+I mockito kan man bruge “ArgumentCaptor” til teste om de rigtige argumenter er blevet set med. Her er et billede hvor jeg ikke har giver nogle argumenter med og den fejler fordi den forventer argumentet “someElement”
+![x](/images/mock-parameters.png)  
+
+
+### How do you use a predicate to verify the properties of the arguments given to a call to the mock? 
+Vi kunne ikke få predicate til at virke i Mockito....
