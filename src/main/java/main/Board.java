@@ -29,14 +29,14 @@ public class Board {
         }
     }
 
-    public void placePiece(int pos, String user) {
+    public void placePiece(int pos, Enum player) {
             char symbol = ' ';
-            if(user.equalsIgnoreCase("player")) {
+            if(player == Players.YOU) {
                 symbol = 'X';
                 playerPositions.add(pos);
             }
 
-            if(user.equalsIgnoreCase("cpu")) {
+            if(player == Players.CPU) {
                 symbol = 'O';
                 cpuPositions.add(pos);
             }

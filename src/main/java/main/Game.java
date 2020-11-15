@@ -6,11 +6,11 @@ public class Game {
     static Board board = new Board();
 
     public static void main(String[] args) {
-
+        Play();
     }
 
 
-    public void Play() {
+    public static void Play() {
         board.setUp(); //Run setup
         board.printBoard(); //Print the board
 
@@ -23,7 +23,7 @@ public class Game {
                 playerPos = sc.nextInt();
             }
 
-            board.placePiece(playerPos, "player");
+            board.placePiece(playerPos, Players.YOU);
             board.printBoard();
 
             Random rnd = new Random();
@@ -31,7 +31,7 @@ public class Game {
             while(board.positionTaken(cpuPos) == true) {
                 cpuPos = rnd.nextInt(9) + 1;
             }
-            board.placePiece(cpuPos, "CPU");
+            board.placePiece(cpuPos, Players.CPU);
             board.printBoard();
         }
     }
