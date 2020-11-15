@@ -4,6 +4,7 @@ import java.util.*;
 public class Game {
 
     static Board board = new Board();
+    static Random rnd = new Random();
 
     public static void main(String[] args) {
         Play();
@@ -26,7 +27,6 @@ public class Game {
             board.placePiece(playerPos, Players.YOU);
             board.printBoard();
 
-            Random rnd = new Random();
             int cpuPos = rnd.nextInt(9) + 1;
             while(board.positionTaken(cpuPos) == true) {
                 cpuPos = rnd.nextInt(9) + 1;
