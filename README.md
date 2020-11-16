@@ -1,4 +1,4 @@
-# Assignment-4  
+# Assignment-4 - Tic Tac Toe Game
 ###   by Jonatan, Jonas & Thomas  
 [Assignment Link](Assignment-4-Description.pdf)  
 
