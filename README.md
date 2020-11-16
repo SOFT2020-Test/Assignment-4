@@ -12,7 +12,7 @@ Junit Test        |  Code Coverage PiHole
 :-------------------------:|:-------------------------:
 ![passed](/images/Junit-Test-Passed.png)  |  ![passed](/images/Jacoco-Test-Coverage.png)
 
-SonarQube Analysis        |  PiHole Mutations (this doesnt work for some reason...
+SonarQube Analysis        |  PiHole Mutations (this doesnt work for some reason...)
 :-------------------------:|:-------------------------:
 ![passed](/images/sonarqube-analyse.png)  |  ![passed](/images/mutations.png)
 
