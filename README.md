@@ -1,6 +1,8 @@
 # Assignment-4 - Tic Tac Toe Game
-###   by Jonatan, Jonas & Thomas  
-[Assignment Link](Assignment-4-Description.pdf)  
+- Jonatan Bakke https://github.com/JonatanMagnusBakke
+- Jonas Hein - https://github.com/Zenzus
+- Thomas Ebsen - https://github.com/Srax
+- [Assignment Link](Assignment-4-Description.pdf)  
 
 ## Setup
 What you'll need:
